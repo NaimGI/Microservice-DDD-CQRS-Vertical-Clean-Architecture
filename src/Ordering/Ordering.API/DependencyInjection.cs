@@ -11,7 +11,7 @@ namespace Ordering.API
         {
             services.AddCarter();
 
-            //services.AddExceptionHandler<CustomExceptionHandler>();
+            services.AddExceptionHandler<CustomExceptionhandler>();
             services.AddHealthChecks()
                 .AddSqlServer(configuration.GetConnectionString("Database")!);
 
